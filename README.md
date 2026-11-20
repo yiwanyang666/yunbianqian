@@ -2,9 +2,21 @@
 
 高颜值、极轻占用、免登录、支持 **真·端到端零知识加密** 的在线云便签与跨设备文件中转站。
 
-[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/yc696/yunbianqian)
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/yiwanyang666/yunbianqian)
 
 > **零配置一键上云**：点击上方 **Deploy to Cloudflare** 按钮即可自动创建 Cloudflare Worker + 免费 D1 数据库并部署静态资源，**无需绑定信用卡、无需手动建表、无需配置 R2**，约 1 分钟即可拥有全球边缘加速的专属云便签。
+
+---
+
+## 界面预览
+
+### 晨光纸韵（浅色模式 · 极简首页）
+
+![云便签首页预览（晨光纸韵）](./docs/preview-home.png)
+
+### 暗夜曜石（深色模式 · 端到端加密 & Markdown 分屏工作区）
+
+![云便签工作区预览（暗夜曜石分屏）](./docs/preview-workspace.png)
 
 ---
 
