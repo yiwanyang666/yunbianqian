@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="no-referrer" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0f766e" />
+
+    <title>云便签 — 免费免登录的端到端加密在线云便签与跨设备剪贴板</title>
+    <meta
+      name="description"
+      content="云便签是一款高颜值、免注册、免登录的在线云便签与跨设备网络剪贴板工具。支持自定义路径、浏览器本地 AES-256-GCM 端到端零知识加密、加密文件中转、Markdown 分屏预览、本地二维码扫码分享、只读保护与阅后即焚。"
+    />
+    <meta
+      name="keywords"
+      content="云便签,在线便签,云剪贴板,跨设备同步文本,端到端加密便签,在线记事本,阅后即焚,加密文件中转,Markdown在线笔记,零知识加密,免登录便签"
+    />
+    <meta name="application-name" content="云便签" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta property="og:site_name" content="云便签" />
+    <meta property="og:title" content="云便签 — 端到端零知识加密在线云便签与跨设备剪贴板" />
+    <meta
+      property="og:description"
+      content="免登录、自定义路径、本地 AES-256-GCM 端到端加密。轻松在手机、电脑、平板之间安全传输文字、代码与文件。"
+    />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="云便签 — 端到端加密在线云便签" />
+    <meta
+      name="twitter:description"
+      content="免登录、自定义路径、本地 AES-256-GCM 零知识加密的在线云便签、跨设备剪贴板与加密文件中转站。"
+    />
+
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230F766E'/%3E%3Cpath d='M16 7a5 5 0 0 0-5 5v2H9.5A1.5 1.5 0 0 0 8 15.5v8A1.5 1.5 0 0 0 9.5 25h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 22.5 14H21v-2a5 5 0 0 0-5-5zm-3 5a3 3 0 1 1 6 0v2h-6v-2zm3 5.75a1.75 1.75 0 0 1 .75 3.33V22.5a.75.75 0 0 1-1.5 0v-1.42A1.75 1.75 0 0 1 16 17.75z' fill='%23FFFFFF'/%3E%3C/svg%3E"
+    />
+
+    <!-- Structured Data (JSON-LD) for Search Engine Rich Snippets -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "云便签",
+        "alternateName": "CloudNote",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "All",
+        "inLanguage": "zh-CN",
+        "isAccessibleForFree": true,
+        "description": "免登录、自定义路径、支持浏览器本地 AES-256-GCM 端到端零知识加密的在线云便签与跨设备文件中转工具。",
+        "featureList": [
+          "免注册免登录自定义网址路径",
+          "WebCrypto AES-256-GCM 端到端零知识加密",
+          "PBKDF2 60万次迭代密码锁与 256-bit 链接密钥",
+          "本地加密文件中转与本地二维码生成",
+          "Markdown 编辑与分屏实时预览",
+          "防误触阅后即焚、定时自动销毁与只读保护"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "CNY"
+        }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "云便签如何保证隐私和加密安全？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "云便签使用浏览器原生 Web Crypto API，在本地通过 PBKDF2-HMAC-SHA256（60万次迭代）或 256-bit 链接片段密钥派生密钥，并以 AES-256-GCM 认证加密上传，服务器仅保存密文，无法查看明文内容。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "不注册账号怎么在手机和电脑间同步文本和文件？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "在首页输入任意自定义路径即可创建专属便签页，在另一台设备打开相同网址或扫描页面内本地生成的二维码即可跨平台同步文字、代码和加密文件。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "忘记密码后可以找回加密便签吗？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "不可以。由于云便签采用零知识架构，密码和加密密钥从未发送到服务器，因此请妥善保管您设置的访问密码或含密钥的完整链接。"
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      <div style="max-width: 680px; margin: 48px auto; padding: 24px; font-family: sans-serif; line-height: 1.7">
+        <h1>云便签 — 端到端加密在线云便签与跨设备剪贴板</h1>
+        <p>请启用浏览器 JavaScript 以使用云便签的本地 WebCrypto AES-256-GCM 端到端加密、Markdown 预览与跨设备同步功能。</p>
+      </div>
+    </noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
